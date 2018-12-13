@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;       // heroku + localh.
 var app = express();
 
 
-hbs.registerPartials(__dirname + '/views/partials')
+hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
 
