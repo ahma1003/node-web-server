@@ -50,6 +50,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects page'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send( {
         errorMessage: 'Unable to handle page'
@@ -63,5 +69,5 @@ app.listen(port, () => {
 
 
 /**
- * // to stop server: killall node
+ * // to stop the server: killall node
  */
